@@ -16,11 +16,13 @@ Save generated passwords to a file on your local machine to keep track of them. 
   - Cross-Platform Access
 
 GUI Mode: A graphical interface for local users.
+
 Web Mode: Hosted on Render for easy access from any device with a browser.
-Serverless Architecture
+
+Serverless Architecture:
 Designed to work without a backend database, ensuring simplicity and security.
 
-Secure Practices
+Secure Practices:
 The application focuses on user privacy, ensuring no passwords are stored on the server in web mode.
 
 ## How It Works
