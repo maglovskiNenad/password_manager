@@ -26,16 +26,16 @@ Run the application:
 Open the app in your browser:
 Navigate to http://127.0.0.1:5000.
 
-### Limitations
+## Limitations
   - The passwords file is not stored on the server but is downloadable for local use.
   - Ensure the downloaded file is stored securely to prevent unauthorized access.
     
-### Security Notes
+## Security Notes
   - Passwords are generated randomly and are not stored on the server for security reasons.
   - Use the generated passwords responsibly, and do not share your passwords file with others.
     
-### Contributing
+## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
 
-### License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
