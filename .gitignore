@@ -1,0 +1,65 @@
+#Python temporary files
+*.pyc
+*.pyo
+__pycache__/
+
+#Temporary files editor
+*.swp
+*.tmp
+
+#Logs and data files
+*.log
+*.db
+
+#Virtual environments
+venv/
+.env
+
+#Sistem fajlovi
+.DS_Store
+Thumbs.db
+
+#Python instaler
+*.manifest
+*.spec
+
+#Installer logos
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Translations
+*.mo
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
