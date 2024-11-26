@@ -19,51 +19,52 @@ Create a new branch for your feature or fix:
 
 - (Optional) Create a Virtual Environment
 
-  python -m venv venv
+      python -m venv venv
 
 - On Linux / mavOS
 
-  source venv/bin/activate
+      source venv/bin/activate
 
 - On Windows:
 
-  venv\Scripts\activate
+      venv\Scripts\activate
 
 - Install the required Python packages listed in the requirements.txt file:
 
-  pip install -r requirements.txt
+      pip install -r requirements.txt
 
 - Check if Flask is installed
 
-  pip show flask
+      pip show flask
 
 - If Flask is not installed, install it:
 
-  pip install flask
+      pip install flask
 
 - If already installed, check the version:
 
-  python -m flask --version
+      python -m flask --version
 
 - The Flask CLI (Command Line Interface) command may not be in the PATH variable. Try running it explicitly with python -m:
 
-  python -m flask run
+      python -m flask run
 
 4. Setting the FLASK_APP variable
 
 - Linix/Mac:
 
-  export FLASK_APP=my_flask_app
-  flask run
+      export FLASK_APP=my_flask_app
+      flask run
 
 - Windows(CMD):
 
-  set FLASK_APP=my_flask_app
-  flask run
+      set FLASK_APP=my_flask_app
+      flask run
 
 - Windows(Power Shell):
-  $env:FLASK_APP = "my_flask_app"
-  flask run
+
+      $env:FLASK_APP = "my_flask_app"
+      flask run
 
 5. Run the Application Locally
 
