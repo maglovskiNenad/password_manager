@@ -1,6 +1,6 @@
-### Contributing
+# Contributing
 
-# Contributions are welcome! If you'd like to add features or fix bugs, follow these steps:
+## Contributions are welcome! If you'd like to add features or fix bugs, follow these steps:
 
 1. Fork the Repository
 
