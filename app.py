@@ -1,12 +1,9 @@
-from flask import *
+from flask import Flask
+from app.routes import bp  # Import Blueprint-a iz routes.py
 
 app = Flask(__name__)
 
-
-@app.route("/")
-def index():
-    return render_template("index.html")  # Page view route
-
+app.register_blueprint(bp)
 
 if __name__ == "__main__":
     app.run(debug=True)
