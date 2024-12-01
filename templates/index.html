@@ -3,11 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/style.css" />
-    <title>Password generator</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Password Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <h1>Desi deda</h1>
-    <p>Pocetna stranica je uradjena mozemo da pocnemo</p>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contributuion</li>
+      </ul>
+    </nav>
+    <h1>Generate a password</h1>
+    <form id="passwordForm">
+      <button type="button" id="generateBtn">Generate</button>
+      <input type="text" id="generatedPassword" readonly />
+    </form>
+    <h1>About page</h1>
+    <p>Some text blablalala</p>
+    <script src="/static/js/script.js"></script>
   </body>
 </html>
