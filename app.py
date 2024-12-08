@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import random
 import string
 
-app = Flask(__name__, static_folder="static")
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 
 def generate_password(length=25):
