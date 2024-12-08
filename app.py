@@ -16,7 +16,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/generate_password", methods=["POST"])
+@app.route("/", methods=["POST"])
 def generate():
     if request.method == "POST":
         # Generise lozinku

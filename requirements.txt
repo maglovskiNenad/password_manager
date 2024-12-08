@@ -1,2 +1,2 @@
-Flask==2.3.2 #This is a web framework used for local application development in Python.
+Flask==2.0.1 #This is a web framework used for local application development in Python.
 gunicorn==21.0.1 #This is a WSGI HTTP server used for production, when you want to run an application on the server.
