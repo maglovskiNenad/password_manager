@@ -11,7 +11,7 @@ $(document).ready(function () {
         $("#passwordDisplay").text(response.password);
       },
       error: function (error) {
-        alert("Error generating password");
+        alert("Error generating password!");
       },
     });
   });

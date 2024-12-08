@@ -1,4 +1,12 @@
 body {
-  background-color: black;
-  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  ); /* Crni gradijent sa efektnim presijavanjem */
+  color: white; /* Bele boje za tekst kako bi bio vidljiv na crnoj pozadini */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Puno visine ekrana */
 }
