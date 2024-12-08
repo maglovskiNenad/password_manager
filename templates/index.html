@@ -9,7 +9,7 @@
       href="{{ url_for('static', filename='css/style.css') }}"
     />
     <title>Password Generator</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
     <h1>Generate a password</h1>
@@ -20,6 +20,5 @@
     <p>Generated Password: <span id="passwordDisplay"></span></p>
     <h1>About page</h1>
     <p>Some text blablalala</p>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
