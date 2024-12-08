@@ -19,9 +19,7 @@ def index():
 @app.route("/generate_password", methods=["POST"])
 def generate():
     if request.method == "POST":
-        # Generise lozinku
         password = generate_password()
-        # Spremi lozinku
         return jsonify({"password": password})
     return render_template("index.html", password=None)
 
