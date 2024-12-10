@@ -51,7 +51,7 @@ Create a new branch for your feature or fix:
 
 4. Setting the FLASK_APP variable
 
-- Linix/Mac:
+- Linux/Mac:
 
       export FLASK_APP=my_flask_app
       flask run
