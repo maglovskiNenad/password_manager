@@ -1,5 +1,6 @@
 bind = "0.0.0.0:10000"
-workers = 2
+workers = 1
 threads = 2
 timeout = 120
 loglevel = "info"
+app = "root.app:app"
