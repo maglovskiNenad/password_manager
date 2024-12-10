@@ -1,11 +1,13 @@
+"""Importing the flask possibility"""
 from flask import Flask, request, render_template, jsonify
 import random
 import string
 
-app = Flask(__name__, static_folder='static', static_url_path='/static')
+app = Flask(__name__)
 
 
 def generate_password(length=25):
+    """Generate the password"""
     characters = string.ascii_letters + string.digits + string.punctuation
     password = "".join(random.choice(characters) for i in range(length))
     return password
@@ -13,11 +15,13 @@ def generate_password(length=25):
 
 @app.route("/")
 def index():
+    """Rendering the html page"""
     return render_template("index.html")
 
 
 @app.route("/generate_password", methods=["POST"])
 def generate():
+    """Sending generated password to frontend"""
     if request.method == "POST":
         password = generate_password()
         return jsonify({"password": password})

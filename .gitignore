@@ -1,65 +1,33 @@
-#Python temporary files
+# Python bytecode files
+__pycache__/
 *.pyc
 *.pyo
-__pycache__/
 
-#Temporary files editor
-*.swp
-*.tmp
+# Virtual environment directories
+venv/
+env/
 
-#Logs and data files
+# SQLite databases
+*.sqlite3
+
+# Flask instance folder
+instance/
+
+# Log files
 *.log
+
+# Environment variables file
+.env
+
+# Database files
 *.db
 
-#Virtual environments
-venv/
-.env
+# IDE configurations
+.idea/
+.vscode/
 
-#Sistem fajlovi
+# macOS specific files
 .DS_Store
-Thumbs.db
 
-#Python instaler
-*.manifest
-*.spec
-
-#Installer logos
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
+# Python distribution files
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Translations
-*.mo
-*.pot
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css"
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"
     />
     <title>Password Generator</title>
 </head>
@@ -11,11 +11,10 @@
 <h1>Generate a password</h1>
 <form id="passwordForm">
     <button type="button" id="generateBtn">Generate</button>
-    <input type="text" id="generatedPassword" readonly/>
+    <input type="text" id="generatedPassword" readonly />
 </form>
 <p>Generated Password: <span id="passwordDisplay"></span></p>
 <h1>About page</h1>
-<p>Some text here!</p>
-<script src="/static/js/script.js"></script>
+<p>Some text here</p><script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
