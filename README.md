@@ -10,14 +10,6 @@ A lightweight and secure password generator and manager built using Python. This
 
 Generate secure, random passwords of customizable length using Python's cryptographic libraries.
 
-### Local File Storage
-
-Save generated passwords to a file on your local machine to keep track of them. The application ensures:
-
-- Appending new passwords to an existing file.
-- Creating a new file if none exists.
-- Cross-Platform Access
-
 GUI Mode: A graphical interface for local users.
 
 Web Mode: Hosted on Render for easy access from any device with a browser.
@@ -28,30 +20,9 @@ Designed to work without a backend database, ensuring simplicity and security.
 Secure Practices:
 The application focuses on user privacy, ensuring no passwords are stored on the server in web mode.
 
-## How It Works
-
-Password Generation:
-
-- Enter the website/service name and the desired password length.
-- Generate a password using a random combination of letters, numbers, and symbols.
-
-Adding Passwords:
-
-- Click "Add to File" to save the password along with the website name into a local file (passwords.txt).
-
-Downloading Passwords:
-
-- If using the web app, download the file containing all your saved passwords.
-
-Reusing or Updating Password Files:
-
-- The application automatically checks if the password file exists.
-- If found, new entries are appended; otherwise, a new file is created.
-
 ## Limitations
 
-- The passwords file is not stored on the server but is downloadable for local use.
-- Ensure the downloaded file is stored securely to prevent unauthorized access.
+- The passwords file is not stored on the server.
 
 ## Security Notes
 
