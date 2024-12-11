@@ -13,3 +13,14 @@ $(document).ready(function () {
     });
   });
 });
+
+const themeToggleButton = document.getElementById("theme-toggle");
+
+themeToggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    themeToggleButton.textContent = "🌙";
+  } else {
+    themeToggleButton.textContent = "🌞";
+  }
+});
