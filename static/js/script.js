@@ -21,6 +21,6 @@ themeToggleButton.addEventListener("click", () => {
   if (document.body.classList.contains("dark")) {
     themeToggleButton.textContent = "🌙";
   } else {
-    themeToggleButton.textContent = "🌞";
+    themeToggleButton.textContent = "&#x2600;";
   }
 });
