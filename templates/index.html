@@ -22,12 +22,11 @@
       type="text/css"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
-    <title>Password Generator</title>
+    <title>Password generator</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <button id="theme-toggle" class="toggle">&#x2600;</button>
-    <div class="wrapper">
+    <div class="wrapperGenerator">
       <h1>Generate a password</h1>
       <form id="passwordForm" class="passwordForm">
         <button type="button" class="button-28" id="generateBtn">
@@ -40,10 +39,6 @@
           readonly
         />
       </form>
-      <div class="password">
-        <p>Generated password:</p>
-        <span class="passwordDisplay" id="passwordDisplay"></span>
-      </div>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
