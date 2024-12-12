@@ -11,16 +11,13 @@ body {
 }
 
 .wrapperGenerator {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30px auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
   width: 50%;
   height: 140px;
   border-radius: 15px;
-  margin: auto;
+  padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -78,6 +75,15 @@ body {
   border: none;
   text-align: center;
   border: 0.5px solid black;
+}
+
+/*About page*/
+.aboutPage {
+  width: 85%;
+  display: block;
+  margin: auto;
+  word-break: keep-all;
+  text-align: left;
 }
 @media (max-width: 768px) {
   .wrapperGenerator {
