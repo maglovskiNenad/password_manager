@@ -82,14 +82,18 @@ body {
 @media (max-width: 768px) {
   .wrapperGenerator {
     width: 80%;
-    height: 150px;
   }
   .generatedPassword {
     width: 60%;
-    font-size: 11px;
+    font-size: 10px;
+    height: 30px;
   }
 
   .button-28 {
-    font-size: 9.5px;
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 }
