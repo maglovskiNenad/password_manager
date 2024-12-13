@@ -139,6 +139,7 @@ p {
   text-align: left;
 }
 
+/*Responsive*/
 @media (max-width: 768px) {
   .wrapperGenerator {
     width: 80%;
