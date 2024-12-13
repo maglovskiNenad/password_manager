@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
 .wrapperGenerator {
   margin: 250px auto;
   text-align: center;
@@ -22,13 +27,19 @@
   display: block;
 }
 
+.passwordForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .button-28 {
   appearance: none;
   background-color: transparent;
-  border: 1px solid #1a1a1a;
+  border: none;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3b3b3b;
+  color: #535353;
   cursor: pointer;
   display: inline-block;
   line-height: normal;
@@ -45,6 +56,7 @@
   width: 20%;
   will-change: transform;
   text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .button-28:disabled {
@@ -69,7 +81,8 @@
   border-radius: 10px;
   border: none;
   text-align: center;
-  border: 0.5px solid black;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .h1 {
@@ -91,17 +104,30 @@ p {
 }
 
 .copyBtn {
-  width: 10%;
-  height: 30px;
+  width: 30px;
+  height: 33px;
   float: right;
-  background-color: white;
-  border: 0.5px solid black;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .copyMsg {
   text-align: center;
+}
+.toogleTheme {
+  margin: auto;
+  padding: 20px;
+}
+
+.toggleBtn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
 
 /*About page*/

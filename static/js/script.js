@@ -34,3 +34,7 @@ $("#copyBtn").on("click", function () {
   }
   setTimeout(() => copyMsg.text(""), 3000);
 });
+
+$("#toggleBtn").on("click", function () {
+  document.body.classList.toggle("dark-theme");
+});
