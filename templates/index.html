@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Password manager" />
     <meta
       property="og:description"
@@ -17,82 +18,118 @@
       content="https://password-manager-7bbw.onrender.com"
     />
     <meta property="og:type" content="website" />
+    <!-- CSS -->
     <link
       rel="stylesheet"
       type="text/css"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
     <title>Password generator</title>
+    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div class="toogleTheme">
-      <button class="toggleBtn" id="toggleBtn">&#x2600;</button>
-    </div>
-    <div class="wrapperGenerator">
-      <h1 class="h1">Generate a password</h1>
-      <form id="passwordForm" class="passwordForm">
-        <button type="button" class="button-28" id="generateBtn">
-          Generate
-        </button>
-        <input
-          type="text"
-          class="generatedPassword"
-          id="generatedPassword"
-          placeholder="readonly"
-          readonly
-        />
-        <button type="button" class="copyBtn" id="copyBtn">&#x1F4C4;</button>
-      </form>
-      <p class="copyMsg" id="copyMsg"></p>
-    </div>
-    <div class="aboutPage">
-      <h1>About</h1>
-      <br />
-      <hr />
-      <div class="pythonApp">
-        <h2>Password Manager - Python GUI/Web Application</h2>
+    <!-- HEADER OR NAVBAR -->
+    <header class="header">
+      <div class="toogleTheme">
+        <button class="toggleBtn" id="toggleBtn">&#x2600;</button>
+      </div>
+    </header>
+    <!-- MAIN OF THE BODY -->
+    <main class="main">
+      <!-- PASSWORD GENERATOR UI -->
+      <div class="wrapperGenerator">
+        <h1 class="h1">Generate a password</h1>
+        <form id="passwordForm" class="passwordForm">
+          <button type="button" class="button-28" id="generateBtn">
+            Generate
+          </button>
+          <input
+            type="text"
+            class="generatedPassword"
+            id="generatedPassword"
+            placeholder="readonly"
+            readonly
+          />
+          <button type="button" class="copyBtn" id="copyBtn">&#x1F4C4;</button>
+        </form>
+        <p class="copyMsg" id="copyMsg"></p>
+      </div>
+      <!-- ABOUT PAGE -->
+      <div class="page">
+        <h1>About</h1>
+        <br />
+        <hr />
+        <div class="pythonApp">
+          <h2>Password Manager - Python GUI/Web Application</h2>
+          <hr />
+          <p>
+            A lightweight and secure password generator and manager built using
+            Python. This project provides an intuitive user interface for
+            generating and saving strong passwords, and it can be hosted as a
+            web application using platforms like Render.
+          </p>
+        </div>
+        <div class="feautersBlock">
+          <h2>Strong Password Generation</h2>
+          <hr />
+          <p>
+            - Generate secure, random passwords of customizable length using
+            Python's cryptographic libraries. <br />
+            - GUI Mode: A graphical interface for local users. <br />
+            - Mode: Hosted on Render for easy access from any device with a
+            browser.<br />
+            - Serverless Architecture: Designed to work without a backend
+            database, ensuring simplicity and security.<br />
+            - Secure Practices: The application focuses on user privacy,
+            ensuring no passwords are stored on the server in web mode.
+          </p>
+        </div>
+        <div class="secureNotesBlock">
+          <h2>Security Notes</h2>
+          <hr />
+          <p>
+            Passwords are generated randomly and are not stored on the server
+            for security reasons.Use the generated passwords responsibly, and do
+            not share your passwords file with others.
+          </p>
+        </div>
+        <div class="license">
+          <h2>License</h2>
+          <hr />
+          <p>
+            This project is licensed under the MIT License. See the
+            <a
+              class="text"
+              href="https://github.com/maglovskiNenad/password_manager/blob/main/LICENSE"
+              >LICENSE</a
+            >
+            file for details.
+          </p>
+        </div>
+      </div>
+      <!-- CONTRIBUTING PAGE -->
+      <div class="page">
+        <h1>Contributing</h1>
+        <br />
         <hr />
         <p>
-          A lightweight and secure password generator and manager built using
-          Python. This project provides an intuitive user interface for
-          generating and saving strong passwords, and it can be hosted as a web
-          application using platforms like Render.
+          Contributions are welcome! If you'd like to add features or fix bugs,
+          follow these steps:
+        </p>
+          <a
+            class="text centerText"
+            href="https://github.com/maglovskiNenad/password_manager/blob/main/CONTRIBUTION.md"
+            >...CONTRIBUTING...</a
+          >
         </p>
       </div>
-      <div class="feautersBlock">
-        <h2>Strong Password Generation</h2>
-        <hr />
-        <p>
-          - Generate secure, random passwords of customizable length using
-          Python's cryptographic libraries. <br />
-          - GUI Mode: A graphical interface for local users. <br />
-          - Mode: Hosted on Render for easy access from any device with a
-          browser.<br />
-          - Serverless Architecture: Designed to work without a backend
-          database, ensuring simplicity and security.<br />
-          - Secure Practices: The application focuses on user privacy, ensuring
-          no passwords are stored on the server in web mode.
-        </p>
-      </div>
-      <div class="secureNotesBlock">
-        <h2>Security Notes</h2>
-        <hr />
-        <p>
-          Passwords are generated randomly and are not stored on the server for
-          security reasons.Use the generated passwords responsibly, and do not
-          share your passwords file with others.
-        </p>
-      </div>
-      <div class="license">
-        <h2>License</h2>
-        <hr />
-        <p>
-          This project is licensed under the MIT License. See the LICENSE file
-          for details.
-        </p>
-      </div>
-    </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="copyright">Nenad Maglovski 2024&copy;</p>
+    </footer>
+    <!-- JS -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
