@@ -14,7 +14,7 @@ body.dark-theme {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
   width: 50%;
-  height: 80px;
+  height: 170px;
   border-radius: 15px;
   letter-spacing: 1px;
   padding: 30px;
@@ -164,6 +164,49 @@ p {
 
 .copyright {
   text-align: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 18px;
+  color: white;
+}
+
+input[type="checkbox"].invalid {
+  background-color: red;
+}
+
+label {
+  position: absolute;
+  margin: 5px 0 0 15px;
 }
 
 /*Responsive*/

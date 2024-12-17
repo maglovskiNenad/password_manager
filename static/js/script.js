@@ -1,3 +1,30 @@
+/*
+
+    Function to check if the generated password contains uppercase letters
+    and updates the state of the checkbox accordingly.
+      
+    If the password contains uppercase and 
+    lowercase letters,special characters,numbers:
+    - The checkbox will be checked (selected).
+    - The background color of the checkbox will be black.
+     
+    If the password does not contain uppercase letters 
+    and lowercase letters,special characters,numbers:
+    - The checkbox will be unchecked.
+    - The background color of the checkbox will turn red.
+
+
+*/
+
+function checkThePassword(password) {
+  upercaseLetters = document.getElementsByClassName(".inputL");
+  let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).+$/;
+
+  if (password == "" || regex.test(password) === false) {
+  } else {
+  }
+}
+
 /* 
 
 This API endpoint generates a secure random password based
@@ -19,11 +46,10 @@ $(document).ready(function () {
       success: function (response) {
         // Set the generated password into the input field with ID "generatedPassword"
         $("#generatedPassword").val(response.password);
-
+        checkThePassword(response.password);
         // Display the generated password in the element with ID "passwordDisplay"
         $("#passwordDisplay").text(response.password);
       },
-
       // If an error occurs during the request
       error: function (error) {
         // Show an alert to the user indicating an error occurred
@@ -34,6 +60,7 @@ $(document).ready(function () {
 });
 
 /* 
+
 
 This function copies the password from an input field to the 
 clipboard. It retrieves the value of the input field, copies 
@@ -48,10 +75,13 @@ $("#copyBtn").on("click", function () {
   const passwordInput = $("#generatedPassword");
   const copyMsg = $("#copyMsg");
 
+  const trimedPassword = passwordInput.val().trim();
   // Check if the password input is empty
-  if (passwordInput.val().trim() == "") {
+  if (trimedPassword == "") {
     // Show an error message if no password is generated
+    checkThePassword(trimedPassword);
     copyMsg.text("Please generate a password first.").css("color", "red");
+    setTimeout(() => copyMsg.text(""), 3000); // Clear the message after 3 seconds
     return; // Stop further execution
   }
 
