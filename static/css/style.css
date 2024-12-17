@@ -186,24 +186,6 @@ input[type="checkbox"] {
   position: relative;
 }
 
-input[type="checkbox"]:checked {
-  border-color: black;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-input[type="checkbox"]:checked::after {
-  content: "✔";
-  position: absolute;
-  top: 0;
-  left: 5px;
-  font-size: 18px;
-  color: white;
-}
-
-input[type="checkbox"].invalid {
-  background-color: red;
-}
-
 label {
   position: absolute;
   margin: 5px 0 0 15px;
