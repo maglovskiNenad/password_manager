@@ -177,3 +177,15 @@ preference is applied and optionally saved (e.g., in local storage)
 */
   document.body.classList.toggle("dark-theme");
 });
+
+function scrollToSection(sectionId) {
+  // Get the section element by its ID
+  var section = document.getElementById(sectionId);
+  // Use a slight delay to ensure proper layout calculation before scrolling
+  setTimeout(function () {
+    window.scrollTo({
+      top: section.offsetTop - 80, // 80px is the height of the navigation bar
+      behavior: "smooth", // Smooth scrolling
+    });
+  }, 10); // Delay of 10ms to ensure the layout is fully ready
+}

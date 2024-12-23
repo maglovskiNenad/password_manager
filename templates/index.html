@@ -34,9 +34,17 @@
       <div class="toogleTheme">
         <button class="toggleBtn" id="toggleBtn">&#x2600;</button>
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#home" onclick="scrollToSection('home')">home</a></li>
+          <li><a href="#about" onclick="scrollToSection('about')">about</a></li>
+          <li><a href="#contributing" onclick="scrollToSection('contributing')">contributing</a></li>
+          <li><a href="#contact" onclick="scrollToSection('contact')">contact</a></li>
+        </ul>
+      </div>
     </header>
     <!-- MAIN OF THE BODY -->
-    <main class="main">
+    <main class="main" id="home">
       <!-- PASSWORD GENERATOR UI -->
       <div class="wrapperGenerator">
         <h1 class="h1">Generate a password</h1>
@@ -81,7 +89,7 @@
        </div>
       </div>
       <!-- ABOUT PAGE -->
-      <div class="page">
+      <div class="page" id="about">
         <h1>About</h1>
         <br />
         <hr />
@@ -134,7 +142,7 @@
         </div>
       </div>
       <!-- CONTRIBUTING PAGE -->
-      <div class="page">
+      <div class="page" id="contributing">
         <h1>Contributing</h1>
         <br />
         <hr />
@@ -150,7 +158,7 @@
         </p>
       </div>
       <!-- CONTACT PAGE -->
-      <div class="page">
+      <div class="page" id="contact">
         <h1>Contact</h1>
         <br>
         <hr>

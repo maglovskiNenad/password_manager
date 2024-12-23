@@ -2,6 +2,7 @@
   font-family: monospace;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body.dark-theme {
@@ -119,6 +120,7 @@ p {
 .toogleTheme {
   margin: auto;
   padding: 20px;
+  width: 50%;
 }
 
 .toggleBtn {
@@ -132,10 +134,34 @@ p {
 
 .header {
   position: sticky;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
+}
+
+.navbar {
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  float: right;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
 }
 
 .toogleTheme {
