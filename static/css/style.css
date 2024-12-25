@@ -10,6 +10,12 @@ body.dark-theme {
   color: #fff;
 }
 
+.mainTitle {
+  text-align: center;
+  font-size: xx-large;
+  margin: 100px 0 -80px 0;
+}
+
 .wrapperGenerator {
   margin: 250px auto;
   text-align: center;
